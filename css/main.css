@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;   
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+body{
+    background-color: #F8F8F8;
+    font-family: "Montserrat", sans-serif;
+}
+.admin {
+    display: flex;
+}
+.admin__navbar {
+    width: 270px;
+    height: 100vh;
+    padding: 18px 25px 33px;
+    background-color: #F2EAE1;
+    display: flex;
+    flex-direction: column;
+}
+.admin__logo-link {
+    display: inline-block;
+    margin-bottom: 25px;
+}
+.admin__card {
+    margin-bottom: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.admin__img{
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+.admin__name {
+    margin-bottom: 10px;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20.72px;
+    font-weight: 700;
+}
+.admin__job {
+    font-size: 14px;
+    line-height: 17.07px;
+    font-weight: 400;
+    color: #FEAF00;
+}
+.admin__demo{
+    height: 514px;
+    position: relative;
+}
+.admin__demo-link {
+    padding: 13px 53px 11px 40px;
+    border-radius: 4px;
+    background-color: #FEAF00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.admin__line {
+    font-size: 14px;
+    line-height: 17.07px;
+    font-weight: 500;
+    color: #000;
+}
+.admin__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: end;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.admin__btn {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.admin__btn-text {
+    color: #000;
+    font-size: 14px;
+    line-height: 17.07px;
+    font-weight: 500;
+}
+
+.admin__warpper {
+    width: 100%;
+}
+.admin__header {
+    padding: 12px  53px 11px 30px;
+    background-color: #F2EAE1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.admin__warpper-card {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+}
+.admin__label {
+    width: 22opx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 11px 14px 11px 13px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+.admin__search {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.admin__search::placeholder{
+    font-size: 14px;
+    line-height: 17.07px;
+    font-weight: 400;
+    color: #C4C4C4;
+}
+
+.admin__student-list {
+    padding: 12px 30px 59px 30px;
+}
+.admin__student-wrap {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.admin__student-title {
+    font-size: 22px;
+    line-height: 26.82px;
+    font-weight: 700;
+}
+.admin__student-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.admin__sort-btn {
+    border: none;
+    background-color: transparent;
+}
+.admin__add-btn {
+    padding: 13px 27px 14px 26px;
+    background-color: #FEAF00;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 17.07px;
+    font-weight: 400;
+    color: #fff;
+}
+/* --------------------------------------Modal--LOGOUT----------------------- */
+
+
+
+.modal-wrapper {
+    transition: all 0.3s;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+    transform: scale(0);
+}
+.modal {
+    transition: all 0.5s;
+    width: 50%;
+    padding: 20px;
+    margin: 100px auto;
+    border-radius: 10px;
+    background-color: goldenrod;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+.open-modal{
+    transition: all 0.3s;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+    transform: scale(1);
+}
+.modal-text {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+}
+.modal-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.modal-cancel {
+    width: 100px;
+    padding: 8px 10px;
+    background-color: blue;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.modal-exit {
+    width: 100px;
+    padding: 8px 10px;
+    background-color: red;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+}
