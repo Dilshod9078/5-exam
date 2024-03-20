@@ -173,6 +173,9 @@ body{
     font-weight: 400;
     color: #fff;
 }
+.remove-navbar{
+    display: none;
+}
 /* --------------------------------------Modal--LOGOUT----------------------- */
 
 

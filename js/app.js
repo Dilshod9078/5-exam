@@ -14,6 +14,10 @@ let elSearch = document.querySelector(".admin__search")
 
 let elSort = document.querySelector(".admin__sort-btn")
 
+let elRemoveBtn = document.querySelector(".admin__btn-inner")
+let elNav = document.querySelector(".admin__navbar")
+
+
 elModalwrapper.addEventListener("click", function(evt){
     if(evt.target.id == "modal-wrapper"){
         elModalwrapper.classList.remove("open-modal")
@@ -268,6 +272,13 @@ function deleteBtn(id){
 
 // ---------------------------Delete end-----------------
 
+// ------------------Admin page remove start-------------------------
+
+elRemoveBtn.addEventListener("click", function(evt){
+    elNav.classList.toggle("remove-navbar") 
+})
+
+// ------------------Admin page remove end-------------------------
 
 // ------------------logout start--------------------------
 
@@ -277,7 +288,7 @@ elLogoutBtn.addEventListener("click", function(evt){
     <p class="modal-text">Do you really want to quit?</p>
     <div class="modal-card">
     <button onclick="logoutCancelBtn()" class="modal-cancel">Cancel</button>
-    <button onclick="logoutExitClickBtn()" class="modal-exit">Exit</button>
+    <button onclick="logoutExitClickBtn()" class="modal-exit">Log out</button>
     </div>
     `
 })
